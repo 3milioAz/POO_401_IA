@@ -2,15 +2,15 @@ package unidad1.elementos.robot;
 
 public class Sensor {
 
-    private String Estatus;
+    private String estatus;
 
     public static void main(String[] args) {
         Sensor sensor = new Sensor();
         sensor.estatusActual("Activo");
-        System.out.println("Estatus del Sensor: "+ sensor.Estatus);
+        System.out.println("Estatus del Sensor: "+ sensor.estatus);
     }
 
     public void estatusActual(String estatus){
-        this.Estatus = estatus;
+        this.estatus = estatus;
     }
 }

@@ -2,8 +2,8 @@ package unidad1.elementos.robot;
 
 public class Brazo {
 
-    private String TipoMovimiento;
-    private Float Velocidad;
+    private String tipoMovimiento;
+    private float velocidad;
 
     public static void main(String[] args) {
         Brazo brazo = new Brazo();
@@ -12,12 +12,12 @@ public class Brazo {
     }
 
     public void asignarMovimiento(String tipo, Float vel){
-        this.TipoMovimiento = tipo;
-        this.Velocidad = vel;
+        this.tipoMovimiento = tipo;
+        this.velocidad = vel;
     }
 
     public void mostrarMovimiento() {
-        System.out.println("Movimiento: " + TipoMovimiento);
-        System.out.println("Velocidad: " +  Velocidad);
+        System.out.println("Movimiento: " + tipoMovimiento);
+        System.out.println("Velocidad: " +  velocidad);
     }
 }
