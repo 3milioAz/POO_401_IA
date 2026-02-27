@@ -16,7 +16,7 @@ class AnalizadorSentimientos extends MotorIA {
         System.out.println("[INFO] Extrayendo embeddings semánticos...");
 
         // Lógica simple para la práctica
-        if (texto.toLowerCase().contains("feliz") || texto.toLowerCase().contains("bueno")) {
+        if (texto.toLowerCase().contains("feliz") || texto.toLowerCase().contains("bueno") || texto.toLowerCase().contains("alegre") || texto.toLowerCase().contains("emocionado") || texto.toLowerCase().contains("contento")){
             System.out.println("RESULTADO: Sentimiento Positivo (Score: " + Math.random() + ")");
         } else {
             System.out.println("RESULTADO: Sentimiento Negativo o Neutro.");

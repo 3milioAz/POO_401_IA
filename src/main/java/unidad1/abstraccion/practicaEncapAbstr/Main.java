@@ -17,6 +17,9 @@ public class Main {
 
         analizador.analizar("Hoy es un día muy bueno y estoy feliz");
         analizador.analizar("El servicio fue terrible");
+        analizador.analizar("La somida sabia asquerosa");
+        analizador.analizar("Mi primer dia de escuela me tiene emocionado");
+        analizador.analizar("Me siento alegre siempre que me pagan");
 
 
         // TODO: Llamar al método analizar con los siguientes textos:
