@@ -29,6 +29,10 @@ public class Main {
         obj1 = new SensorLidar("Modelo 7", 1.87);
         percepcionHub.add(obj1);
 
+        obj5.setModelo("Modelo 8");
+        obj5.setConsumoEnergia(1.32);
+        percepcionHub.add(obj5);
+
         for (SensorIA f: percepcionHub){
             f.leerDatos();
         }
