@@ -7,4 +7,5 @@ public class SensorLidar extends SensorIA{
         System.out.println("Escaneando entorno 360°... Generando nube de puntos láser.");
         System.out.println();
     }
+
 }

@@ -7,4 +7,5 @@ public class SensorVision extends SensorIA{
         System.out.println("Capturando frame... Ejecutando segmentación semántica de objetos.");
         System.out.println();
     }
+
 }
