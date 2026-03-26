@@ -3,11 +3,9 @@ package unidad2.procesadorNLP;
 import java.util.*;
 import java.util.stream.Collectors;
 
+public class ProcesadorAnalisisSentimiento extends ProcesadorNLP{
 
-public class ProcesadorAnalisisSentimiento extends ProcesadorNLP {
-
-    private static final List<String> STOP_WORDS = new ArrayList<>(Arrays.asList("el", "la", "un"));
-
+    private static final List<String> STOP_WORDS = Arrays.asList("el", "la", "un");
     @Override
     public List<String> tokenizar() {
         tokens = new ArrayList<>(Arrays.asList(getTextoCrudo().split("\\s+")));
@@ -22,11 +20,12 @@ public class ProcesadorAnalisisSentimiento extends ProcesadorNLP {
     @Override
     public Object transformarParaModelo() {
         Map<String, Integer> frecuencia = new HashMap<>();
-        for (String palabra: tokens){
+        for (String palabra: tokens) {
             if (tokens.contains(palabra.toLowerCase())){
                 frecuencia.merge(palabra, 1, Integer::sum);
             }
         }
-        return tokens.size();
+        return frecuencia.toString();
     }
+
 }
