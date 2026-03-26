@@ -1,10 +1,16 @@
 package unidad2.procesadorNLP;
 
+import java.util.ArrayList;
 import java.util.List;
 
 abstract class ProcesadorNLP {
 
     private String textoCrudo;
+    protected List<String> tokens = new ArrayList<>();
+    public void cargarTexto(String texto){
+        this.textoCrudo = texto;
+    }
+
 
     public String getTextoCrudo() {
         return textoCrudo;
@@ -14,8 +20,6 @@ abstract class ProcesadorNLP {
         this.textoCrudo = textoCrudo;
     }
 
-    public void cargarTexto(String texto){
-    };
 
     public abstract List<String> tokenizar();
     public abstract void limpiarTexto();

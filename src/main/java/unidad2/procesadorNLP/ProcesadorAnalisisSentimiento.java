@@ -3,10 +3,10 @@ package unidad2.procesadorNLP;
 import java.util.*;
 import java.util.stream.Collectors;
 
+
 public class ProcesadorAnalisisSentimiento extends ProcesadorNLP {
 
-    private List<String> tokens = new ArrayList<>();
-    private static final List<String> STOP_WORDS = new Arrays.asList("el", "la", "un");
+    private static final List<String> STOP_WORDS = new ArrayList<>(Arrays.asList("el", "la", "un"));
 
     @Override
     public List<String> tokenizar() {
