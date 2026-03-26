@@ -1,4 +1,21 @@
 package unidad2.procesadorNLP;
 
-public class ProcesadorAnalisisSentimiento {
+import java.util.List;
+
+public class ProcesadorAnalisisSentimiento extends ProcesadorNLP {
+
+    @Override
+    public List<String> tokenizar() {
+        return List.of();
+    }
+
+    @Override
+    public void limpiarTexto() {
+
+    }
+
+    @Override
+    public Object transformarParaModelo() {
+        return null;
+    }
 }

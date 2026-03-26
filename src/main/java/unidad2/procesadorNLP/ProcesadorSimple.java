@@ -1,21 +1,24 @@
 package unidad2.procesadorNLP;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ProcesadorSimple extends ProcesadorNLP {
 
     @Override
     public List<String> tokenizar() {
-        return List.of();
+        tokens = new ArrayList<>(Arrays.asList(getTextoCrudo().split("\\s+")));
+        return tokens;
     }
 
     @Override
     public void limpiarTexto() {
-
+        String textoLimpio = getTextoCrudo().replace(".", " ").replace(".", " ")
     }
 
     @Override
-    public Object transformarModelo() {
-        return null;
+    public Object transformarParaModelo() {
+        return tokens.size();
     }
 }
