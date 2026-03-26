@@ -6,6 +6,8 @@ import java.util.List;
 
 public class ProcesadorSimple extends ProcesadorNLP {
 
+    private List<String> tokens = new ArrayList<>();
+
     @Override
     public List<String> tokenizar() {
         tokens = new ArrayList<>(Arrays.asList(getTextoCrudo().split("\\s+")));
@@ -14,7 +16,7 @@ public class ProcesadorSimple extends ProcesadorNLP {
 
     @Override
     public void limpiarTexto() {
-        String textoLimpio = getTextoCrudo().replace(".", " ").replace(".", " ")
+        String textoLimpio = getTextoCrudo().replace(".", " ").replace(",", " ");
     }
 
     @Override
