@@ -4,8 +4,10 @@ public class Rectangulo extends FiguraGeometrica{
 
     double base, altura;
 
-    public Rectangulo(String nombre) {
-        super(nombre);
+    public Rectangulo(double base, double altura) {
+        super("Rectangulo");
+        this.base = base;
+        this.altura = altura;
     }
 
     @Override

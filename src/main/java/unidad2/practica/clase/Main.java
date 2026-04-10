@@ -9,12 +9,23 @@ public class Main {
 
         List<FiguraGeometrica> figuras = new ArrayList<>();
 
-        figuras.add(new Circulo("Circulo"));
-        figuras.add(new Rectangulo("Rectangulito"));
+        figuras.add(new Circulo(12));
+        figuras.add(new Rectangulo(15, 4));
 
         for (FiguraGeometrica f: figuras) {
             f.mostrarNombre();
-            f.calcularArea();
+            System.out.println(f.calcularArea());
         }
+
+
+        System.out.println("--------------- Implementacion 2 ---------------");
+
+        Rectangulo02 rectangulov2 = new Rectangulo02();
+        rectangulov2.setBase(10);
+        rectangulov2.setAltura(5);
+        rectangulov2.mostrarNombre();
+        System.out.println(rectangulov2.calcularArea());
+
+
     }
 }
