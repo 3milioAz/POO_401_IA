@@ -1,4 +1,4 @@
-package unidad2.practicas.practicasPOO;
+package unidad2.practicas.practicasPoo;
 
 public class ManejoDeCiclos {
 
