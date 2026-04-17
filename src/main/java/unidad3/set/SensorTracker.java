@@ -1,4 +1,4 @@
-﻿package unidad3.set;
+package unidad3.set;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -36,13 +36,3 @@ public class SensorTracker {
         camarasActivas.clear();
     }
 }
-
-
-
-
-
-
-
-
-
-
